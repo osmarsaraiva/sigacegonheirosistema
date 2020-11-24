@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,14 +16,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    frm_logar.cpp \
     main.cpp \
     fm_principal.cpp
 
 HEADERS += \
-    fm_principal.h
+    Conexao.h \
+    fm_principal.h \
+    frm_logar.h
 
 FORMS += \
-    fm_principal.ui
+    fm_principal.ui \
+    frm_logar.ui
 
 TRANSLATIONS += \
     sigacegonheiro_pt_BR.ts

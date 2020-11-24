@@ -2,7 +2,7 @@
 #define FM_PRINCIPAL_H
 
 #include <QMainWindow>
-#include <QtSql>
+#include <QtSql/QSql>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Fm_principal; }
@@ -13,10 +13,19 @@ class Fm_principal : public QMainWindow
     Q_OBJECT
 
 public:
-    Fm_principal(QWidget *parent = nullptr);
+    explicit Fm_principal(QWidget *parent = nullptr);
     ~Fm_principal();
+    QIcon cadFechado;
+    QIcon *cadAberto= new QIcon();
+    bool bloqueado;
+    bool logado;
 
-    QSqlDatabase bancoDeDados=QSqlDatabase::addDatabase("QSQLITE");
+    QString nome, acesso_usuario;
+
+
+private slots:
+    void on_btn_bloquear_clicked();
+
 
 private:
     Ui::Fm_principal *ui;

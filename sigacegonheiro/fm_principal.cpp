@@ -8,6 +8,16 @@ Fm_principal::Fm_principal(QWidget *parent)
 {
     ui->setupUi(this);
 
+    logado=false;
+    cadFechado.addFile(":/imagens/imgs/cadeado_fechado.png");
+    cadAberto->addFile(":/imagens/imgs/cadeado_fechado.png");
+
+    ui->btn_bloquear->setText("");
+    ui->btn_bloquear->setIcon(*cadAberto);
+    ui->statusBar->addWidget(ui->btn_bloquear);
+
+
+
     QString local = qApp ->applicationDirPath();
     QString banco = local + "/db/sqlitesiga.db";
     bancoDeDados.setDatabaseName(banco);
