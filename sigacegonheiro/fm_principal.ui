@@ -14,8 +14,222 @@
    <string>Fm_principal</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDepartamentos">
+    <property name="title">
+     <string>Cadastros</string>
+    </property>
+    <widget class="QMenu" name="menuDepartamentos_2">
+     <property name="title">
+      <string>Departamentos</string>
+     </property>
+     <widget class="QMenu" name="menuOperacional">
+      <property name="title">
+       <string>Operacional</string>
+      </property>
+      <addaction name="actionCaminh_es"/>
+      <addaction name="actionCarretas"/>
+      <addaction name="actionVe_clos"/>
+      <addaction name="actionDestinos"/>
+      <addaction name="actionFrotas"/>
+     </widget>
+     <addaction name="menuOperacional"/>
+     <addaction name="actionPessoal"/>
+     <addaction name="actionAdministrativo"/>
+     <addaction name="actionFinanceiro"/>
+    </widget>
+    <addaction name="menuDepartamentos_2"/>
+    <addaction name="actionUsu_rios"/>
+   </widget>
+   <widget class="QMenu" name="menuMovimenta_es">
+    <property name="title">
+     <string>Movimentações</string>
+    </property>
+    <addaction name="actionFinanceiras"/>
+    <addaction name="actionPessoal_2"/>
+    <addaction name="actionAcertar_viagens"/>
+   </widget>
+   <widget class="QMenu" name="menuRelat_rios">
+    <property name="title">
+     <string>Relatórios</string>
+    </property>
+    <widget class="QMenu" name="menuManuten_es">
+     <property name="title">
+      <string>Manutenções</string>
+     </property>
+     <addaction name="actionCaminh_o"/>
+     <addaction name="actionCarreta"/>
+     <addaction name="actionVe_culo"/>
+     <addaction name="actionFrota"/>
+    </widget>
+    <addaction name="actionViagens_Acertadas"/>
+    <addaction name="actionQuinzenas"/>
+    <addaction name="actionBanc_rios"/>
+    <addaction name="actionCaixa"/>
+    <addaction name="actionBalancete"/>
+    <addaction name="actionBalan_o"/>
+    <addaction name="actionImposto"/>
+    <addaction name="actionGastos_de_Viagens"/>
+    <addaction name="menuManuten_es"/>
+   </widget>
+   <widget class="QMenu" name="menuGr_ficos">
+    <property name="title">
+     <string>Gráficos</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSistema">
+    <property name="title">
+     <string>Sistema</string>
+    </property>
+    <addaction name="actionSobre"/>
+    <addaction name="separator"/>
+    <addaction name="actionSair"/>
+   </widget>
+   <addaction name="menuDepartamentos"/>
+   <addaction name="menuMovimenta_es"/>
+   <addaction name="menuRelat_rios"/>
+   <addaction name="menuGr_ficos"/>
+   <addaction name="menuSistema"/>
+  </widget>
+  <action name="actionCaminh_es">
+   <property name="text">
+    <string>Caminhões</string>
+   </property>
+  </action>
+  <action name="actionCarretas">
+   <property name="text">
+    <string>Carretas</string>
+   </property>
+  </action>
+  <action name="actionVe_clos">
+   <property name="text">
+    <string>Veíclos</string>
+   </property>
+  </action>
+  <action name="actionDestinos">
+   <property name="text">
+    <string>Destinos</string>
+   </property>
+  </action>
+  <action name="actionFrotas">
+   <property name="text">
+    <string>Frotas</string>
+   </property>
+  </action>
+  <action name="actionPessoal">
+   <property name="text">
+    <string>Pessoal</string>
+   </property>
+  </action>
+  <action name="actionAdministrativo">
+   <property name="text">
+    <string>Administrativo</string>
+   </property>
+  </action>
+  <action name="actionFinanceiro">
+   <property name="text">
+    <string>Financeiro</string>
+   </property>
+  </action>
+  <action name="actionUsu_rios">
+   <property name="text">
+    <string>Usuários</string>
+   </property>
+  </action>
+  <action name="actionFinanceiras">
+   <property name="text">
+    <string>Financeiras</string>
+   </property>
+  </action>
+  <action name="actionPessoal_2">
+   <property name="text">
+    <string>Recursos Humanos</string>
+   </property>
+  </action>
+  <action name="actionAcertar_viagens">
+   <property name="text">
+    <string>Acertar viagens</string>
+   </property>
+  </action>
+  <action name="actionViagens_Acertadas">
+   <property name="text">
+    <string>Viagens Acertadas</string>
+   </property>
+  </action>
+  <action name="actionQuinzenas">
+   <property name="text">
+    <string>Quinzenas</string>
+   </property>
+  </action>
+  <action name="actionBanc_rios">
+   <property name="text">
+    <string>Bancários</string>
+   </property>
+  </action>
+  <action name="actionCaixa">
+   <property name="text">
+    <string>Caixa</string>
+   </property>
+  </action>
+  <action name="actionBalancete">
+   <property name="text">
+    <string>Balancete</string>
+   </property>
+  </action>
+  <action name="actionBalan_o">
+   <property name="text">
+    <string>Balanço</string>
+   </property>
+  </action>
+  <action name="actionImposto">
+   <property name="text">
+    <string>Impostos</string>
+   </property>
+  </action>
+  <action name="actionGastos_de_Viagens">
+   <property name="text">
+    <string>Gastos de Viagens</string>
+   </property>
+  </action>
+  <action name="actionCaminh_o">
+   <property name="text">
+    <string>Caminhão</string>
+   </property>
+  </action>
+  <action name="actionCarreta">
+   <property name="text">
+    <string>Carreta</string>
+   </property>
+  </action>
+  <action name="actionVe_culo">
+   <property name="text">
+    <string>Veículo</string>
+   </property>
+  </action>
+  <action name="actionFrota">
+   <property name="text">
+    <string>Frota</string>
+   </property>
+  </action>
+  <action name="actionSobre">
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+  <action name="actionSair">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
